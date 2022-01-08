@@ -1,0 +1,1 @@
+This repo contains the independent [RSSHub](https://github.com/DIYgod/RSSHub) docs.
