@@ -2,7 +2,7 @@ name: update rsshub docs
 
 on:
   schedule:
-    - cron: '0 0 0 ? * 2 '  # run on Monday of each week
+    - cron: '0 0 * * MON'  # run on Monday of each week
 
 jobs:
   update:
