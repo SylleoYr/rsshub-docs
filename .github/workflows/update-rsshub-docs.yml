@@ -15,11 +15,13 @@ jobs:
           path: rsshub-app
           # fetch-depth: 0 # Fetch all history
       
-      - name: checkout this repo and update the docs
+      - name: checkout this repo
         uses: actions/checkout@v2
         with:
           path: rsshub-docs
           fetch-depth: 0  # Fetch all history
+      
+      - name: copy the updated docs
         run: |
           cp -r rsshub-app/docs rsshub-docs/docs
           cd rsshub-docs
