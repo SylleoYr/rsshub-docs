@@ -25,7 +25,7 @@ jobs:
       
       - name: copy the updated docs
         run: |
-          cp -r rsshub-app/docs rsshub-docs/docs
+          cp -r rsshub-app/docs rsshub-docs/
           cd rsshub-docs
           git config user.name SylleoYr
           git config user.email SylleoYr@users.noreply.github.com
