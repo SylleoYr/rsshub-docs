@@ -2,3 +2,5 @@
 
 # dist dir for rsshub docs
 docs/.vuepress/dist
+
+node_modules/
