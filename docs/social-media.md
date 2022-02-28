@@ -462,7 +462,7 @@ Tiny Tiny RSS 会给所有 iframe 元素添加 `sandbox="allow-scripts"` 属性�
 
 ### 用户
 
-<Route author="hondajojo" example="/lofter/user/tingtingtingtingzhi" path="/lofter/user/:name" :paramsDesc="['Lofter 用户名, 在URL里']"/>
+<Route author="hondajojo nczitzk" example="/lofter/user/i" path="/lofter/user/:name?" :paramsDesc="['Lofter 用户名, 可以在用户页 URL 中找到']"/>
 
 ### 话题 (标签)
 
@@ -694,6 +694,32 @@ Tiny Tiny RSS 会给所有 iframe 元素添加 `sandbox="allow-scripts"` 属性�
 ### Trends
 
 <Route author="sakamossan" example="/twitter/trends/23424856" path="/twitter/trends/:woeid?" :paramsDesc="['Where On Earth ID. 默认 woeid=1 (World Wide)']" radar="1" rssbud="1"/>
+
+## Vimeo
+
+### 用户页面
+
+<Route author="MisteryMonster" example="/vimeo/user/filmsupply/picks" path="/vimeo/user/:username/:cat" :paramsDesc="['用户名或者 uid，用户名可从地址栏获得，如 [https://vimeo.com/filmsupply](https://vimeo.com/filmsupply) 中为 `filmsupply`', '分类根据不同的用户页面获得，例子中有`Docmentary`，`Narrative`，`Drama`等。填入 `picks` 为和首页一样的推荐排序，推荐排序下没有发布时间信息']" radar="1">
+
+::: tip 请注意带有斜杠的的标签名
+
+如果分类名带有斜杠符号的如 `3D/CG` 时，必须把斜杠`/`转成 `|`
+
+:::
+
+</Route>
+
+### 频道页面
+
+<Route author="MisteryMonster" example="/vimeo/channel/bestoftheyear" path="/vimeo/channel/:channel" :paramsDesc="['channel 名可从 url 获得,如 [https://vimeo.com/channels/bestoftheyear/videos](https://vimeo.com/channels/bestoftheyear/videos) 中的 `bestoftheyear`']" radar="1">
+
+</Route>
+
+### 分类页面
+
+<Route author="MisteryMonster" example="/vimeo/category/documentary/staffpicks" path="/vimeo/category/:category/:staffpicks?" :paramsDesc="['主分类名可从 url 获得，如 [https://vimeo.com/categories/documentary/videos](https://vimeo.com/categories/documentary/videos) 中的 `documentary`。', '填入 `staffpicks` 则按 staffpicks 排序']" radar="1">
+
+</Route>
 
 ## VueVlog
 
@@ -1118,7 +1144,8 @@ rule
 | widthOfPics                | 微博配图宽（生效取决于阅读器）                   | 不指定 / 数字       | 不指定                             |
 | heightOfPics               | 微博配图高（生效取决于阅读器）                   | 不指定 / 数字       | 不指定                             |
 | sizeOfAuthorAvatar         | 作者头像大小                            | 数字             | 48                              |
-| displayVideo               | 是否直接显示微博视频，只在博主 RSS 中有效           | 0/1/true/false | true                            |
+| displayVideo               | 是否直接显示微博视频，只在博主或个人时间线 RSS 中有效     | 0/1/true/false | true                            |
+| displayArticle             | 是否直接显示微博文章，只在博主或个人时间线 RSS 中有效     | 0/1/true/false | false                           |
 | showEmojiInDescription     | 是否展示正文中的 emoji 表情                 | 0/1/true/false | true                            |
 
 指定更多与默认值不同的参数选项可以改善 RSS 的可读性，如
