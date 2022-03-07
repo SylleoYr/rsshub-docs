@@ -66,7 +66,7 @@ pageClass: routes
 
 ### 话题
 
-<Route author="mjysci" example="/apnews/topics2/ap-top-news" path="/apnews/topics2/:topic" :paramsDesc="['话题名称，可在 URL 中找到，例如 AP Top News [https://apnews.com/hub/ap-top-news](https://apnews.com/hub/ap-top-news) 的话题为 `ap-top-news`']"  anticrawler="1"/>
+<Route author="mjysci" example="/apnews/topics/ap-top-news" path="/apnews/topics/:topic" :paramsDesc="['话题名称，可在 URL 中找到，例如 AP Top News [https://apnews.com/hub/ap-top-news](https://apnews.com/hub/ap-top-news) 的话题为 `ap-top-news`']"  anticrawler="1"/>
 采用了 `puppeteer` 规避 `Project Shield`，无全文抓取，建议自建。
 
 ## BBC
@@ -790,7 +790,7 @@ Type 栏目：
 
 ### 实时快讯
 
-<Route author="nczitzk" example="/wallstreetcn/live" path="/wallstreetcn/live/:channel?" :paramsDesc="['快讯分类，默认`global`，见下表']">
+<Route author="nczitzk" example="/wallstreetcn/live" path="/wallstreetcn/live/:category?/:score?" :paramsDesc="['快讯分类，默认`global`，见下表', '快讯重要度，默认`1`全部快讯，可设置为`2`只看重要的']">
 
 | 要闻     | A 股     | 美股       | 港股       | 外汇    | 商品        | 理财        |
 | ------ | ------- | -------- | -------- | ----- | --------- | --------- |
