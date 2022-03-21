@@ -1496,6 +1496,10 @@ Supported sub-sites:
 
 </Route>
 
+### 快讯
+
+<Route author="Fatpandac" example="/chaping/newsflash" path="/chaping/newsflash"/>
+
 ## 城农 Growin' City
 
 ### 城农资讯观点
@@ -1865,7 +1869,7 @@ area 分区选项
 
 ### 首页
 
-<Route author="nczitzk Jeason0228" example="/guancha" path="/guancha/:caty?" :paramsDesc="['分类，见下表，默认为全部']">
+<Route author="nczitzk Jeason0228" example="/guancha" path="/guancha/:category?" :paramsDesc="['分类，见下表，默认为全部']">
 
 | 全部  | 评论 & 研究 | 要闻    | 风闻      | 热点新闻   | 滚动新闻    |
 | --- | ------- | ----- | ------- | ------ | ------- |
@@ -1885,7 +1889,7 @@ others = 热点新闻 + 滚动新闻
 
 ### 观学院
 
-<Route author="nczitzk" example="/guancha/member/recommend" path="/guancha/member/:caty?" :paramsDesc="['分类，见下表']">
+<Route author="nczitzk" example="/guancha/member/recommend" path="/guancha/member/:category?" :paramsDesc="['分类，见下表']">
 
 | 精选        | 观书堂   | 在线课     | 观学院      |
 | --------- | ----- | ------- | -------- |
@@ -2654,13 +2658,13 @@ column 为 third 时可选的 category:
 | --- | ----- | ------ | ---------- | ---------- |
 | all | games | comics | publishing | tablegames |
 
-| 潮玩模型 | 影视         | 音乐    | 活动         | 设计     |
-| ---- | ---------- | ----- | ---------- | ------ |
-| toys | film-video | music | activities | design |
+| 卡牌    | 潮玩模型 | 影视         | 音乐    | 活动         |
+| ----- | ---- | ---------- | ----- | ---------- |
+| cards | toys | film-video | music | activities |
 
-| 科技         | 食品   | 爱心通道    | 动物救助    |
-| ---------- | ---- | ------- | ------- |
-| technology | food | charity | animals |
+| 设计     | 科技         | 食品   | 爱心通道    | 动物救助    |
+| ------ | ---------- | ---- | ------- | ------- |
+| design | technology | food | charity | animals |
 
 | 个人愿望   | 其他     |
 | ------ | ------ |
@@ -3777,6 +3781,18 @@ column 为 third 时可选的 category:
 | 要闻     | 国内       | 国际       | 企业      | 品牌    | 外贸    | 政策     | 科技         | 流行      | 服装      | 家纺      |
 | ------ | -------- | -------- | ------- | ----- | ----- | ------ | ---------- | ------- | ------- | ------- |
 | newsyw | domestic | internal | company | brand | trade | policy | Technology | fashion | apparel | hometex |
+
+</Route>
+
+## 中国工人出版社
+
+### 新闻中心
+
+<Route author="nczitzk" example="/wp-china/news" path="/wp-china/news/:category?" :paramsDesc="['分类，见下表，默认为最新资讯']">
+
+| 最新资讯   | 专题报道    |
+| ------ | ------- |
+| latest | stories |
 
 </Route>
 

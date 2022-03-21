@@ -80,6 +80,16 @@ Rated 对象
 
 <Route author="elxy" example="/bbcnewslabs/news" path="/bbcnewslabs/news"/>
 
+## Bitbucket
+
+### Commits
+
+<Route author="AuroraDysis" example="/bitbucket/commits/blaze-lib/blaze" path="/bitbucket/commits/:workspace/:repo_slug" :paramsDesc="['Workspace', 'Repository']" rssbud="1" rssbud="1"/>
+
+### Tags
+
+<Route author="AuroraDysis" example="/bitbucket/tags/blaze-lib/blaze" path="/bitbucket/tags/:workspace/:repo_slug" :paramsDesc="['Workspace', 'Repository']" rssbud="1" rssbud="1"/>
+
 ## Bitmovin
 
 ### Blog
@@ -209,7 +219,7 @@ GitHub 官方也提供了一些 RSS:
 
 ### 仓库 Pull Requests
 
-<Route author="hashman" example="/github/pull/DIYgod/RSSHub" path="/github/pull/:user/:repo" :paramsDesc="['用户名', '仓库名']" radar="1" rssbud="1"/>
+<Route author="hashman" example="/github/pull/DIYgod/RSSHub" path="/github/pull/:user/:repo/:state?" :paramsDesc="['用户名', '仓库名', 'pull request 状态，`open`,`closed`或`all`，默认为`open`']" radar="1" rssbud="1"/>
 
 ### 用户 Followers
 

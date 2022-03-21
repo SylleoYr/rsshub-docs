@@ -66,6 +66,16 @@ Category
 
 <RouteEn author="elxy" example="/bbcnewslabs/news" path="/bbcnewslabs/news"/>
 
+## Bitbucket
+
+### Commits
+
+<RouteEn author="AuroraDysis" example="/bitbucket/commits/blaze-lib/blaze" path="/bitbucket/commits/:workspace/:repo_slug" :paramsDesc="['Workspace', 'Repository']" rssbud="1" rssbud="1"/>
+
+### Tags
+
+<RouteEn author="AuroraDysis" example="/bitbucket/tags/blaze-lib/blaze" path="/bitbucket/tags/:workspace/:repo_slug" :paramsDesc="['Workspace', 'Repository']" rssbud="1" rssbud="1"/>
+
 ## Bitmovin
 
 ### Blog
@@ -131,7 +141,7 @@ For instance, the `/github/topics/framework/l=php&o=desc&s=stars` route will gen
 
 ### Repo Pull Requests
 
-<RouteEn author="hashman" example="/github/pull/DIYgod/RSSHub" path="/github/pull/:user/:repo" :paramsDesc="['User name', 'Repo name']" radar="1" rssbud="1"/>
+<RouteEn author="hashman TonyRL" example="/github/pull/DIYgod/RSSHub" path="/github/pull/:user/:repo/:state?" :paramsDesc="['User name', 'Repo name', 'the state of pull requests. Can be either `open`, `closed`, or `all`. Default: `open`.']" radar="1" rssbud="1"/>
 
 ### User Followers
 
