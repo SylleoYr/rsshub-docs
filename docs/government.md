@@ -265,6 +265,28 @@ pageClass: routes
 
 </Route>
 
+### 指导原则专栏
+
+<Route author="TonyRL" example="/cde/zdyz/domesticGuide" path="/cde/zdyz/:category" :paramsDesc="['类别，见下表']" radar="1" rssbud="1">
+
+|      发布通告     |     征求意见    |
+| :-----------: | :---------: |
+| domesticGuide | opinionList |
+
+</Route>
+
+## 国家自然科学基金委员会
+
+### 基金要闻
+
+<Route author="Derekmini nczitzk" example="/gov/nsfc/news/jjyw" path="/gov/nsfc/news/:type?" :paramsDesc="['分类，默认为基金要闻，即 `jjyw`']" radar="1" rssbud="1">
+
+| 基金要闻 | 通知公告 | 资助成果 | 科普快讯 |
+| ---- | ---- | ---- | ---- |
+| jjyw | tzgg | zzcg | kpkx |
+
+</Route>
+
 ## 哈尔滨市科技局
 
 ### 政务公开
@@ -342,6 +364,12 @@ pageClass: routes
 
 </Route>
 
+## 美国食品药品监督管理局
+
+### CDRHNew
+
+<Route author="nczitzk" example="/fda/cdrh" path="/fda/cdrh" />
+
 ## 美国中央情报局
 
 ### 年度信息自由法报告
@@ -366,6 +394,18 @@ pageClass: routes
 
 <Route author="sgqy" example="/go.jp/mofa" path="/go.jp/mofa"/>
 
+## 陕西省人民政府
+
+### 陕西省科学技术厅
+
+<Route author="nczitzk" example="/gov/shaanxi/kjt" path="/gov/shaanxi/kjt/:id?" :paramsDesc="['分类，见下表，默认为通知公告']">
+
+| 科技头条 | 工作动态 | 基层科技 | 科技博览 | 媒体聚焦 | 通知公告 |
+| ---- | ---- | ---- | ---- | ---- | ---- |
+| 1061 | 24   | 27   | 25   | 28   | 221  |
+
+</Route>
+
 ## 上海市人民政府
 
 ### 上海市职业能力考试院 考试项目
@@ -375,6 +415,20 @@ pageClass: routes
 ### 上海卫健委 疫情通报
 
 <Route author="zcf0508" example="/gov/shanghai/wsjkw/yqtb" path="/gov/shanghai/wsjkw/yqtb"/>
+
+### 上海市药品监督管理局
+
+<Route author="nczitzk" example="/gov/shanghai/yjj/zh" path="/gov/shanghai/yjj/:path+" :paramsDesc="['路径参数']" radar="1" rssbud="1">
+
+::: tip 提示
+
+路径处填写对应页面 URL 中 `https://yjj.sh.gov.cn/` 与 `/index.html` 之间的字段，下面是一个例子。
+
+若订阅 [最新信息公开 > 综合](https://yjj.sh.gov.cn/zh/index.html) 则将对应页面 URL <https://yjj.sh.gov.cn/zh/index.html> 中 `https://yjj.sh.gov.cn/` 和 `/index.html` 之间的字段 `zh` 作为路径填入。此时路由为 [`/gov/shanghai/yjj/zh`](https://rsshub.app/gov/shanghai/yjj/zh)
+
+:::
+
+</Route>
 
 ## 世界贸易组织
 
@@ -475,6 +529,18 @@ pageClass: routes
 | 新闻稿 | 消费资讯 |
 | :-: | :--: |
 | xwg | xfzx |
+
+</Route>
+
+## 台灣法務部廉政署
+
+### 最新消息
+
+<Route author="TonyRL" example="/gov/moj/aac/news" path="/gov/moj/aac/news/:type?" :paramsDesc="['資料大類，留空為全部']">
+
+| 全部 | 其他 | 採購公告 | 新聞稿 | 肅貪 | 預防 | 綜合 | 防疫專區 |
+| -- | -- | ---- | --- | -- | -- | -- | ---- |
+|    | 02 | 01   | 06  | 05 | 04 | 03 | 99   |
 
 </Route>
 
