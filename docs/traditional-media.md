@@ -878,6 +878,45 @@ Type 栏目：
 
 <Route author="nczitzk" example="/pts/dailynews" path="/pts/dailynews"/>
 
+### 專題策展
+
+<Route author="nczitzk" example="/pts/curations" path="/pts/curations"/>
+
+### 觀點
+
+<Route author="nczitzk" example="/pts/opinion" path="/pts/opinion"/>
+
+### 數位敘事
+
+<Route author="nczitzk" example="/pts/projects" path="/pts/projects"/>
+
+### 深度報導
+
+<Route author="nczitzk" example="/pts/report" path="/pts/report"/>
+
+### 分類
+
+<Route author="nczitzk" example="/pts/category/9" path="/pts/category/:id" :paramsDesc="['分類 id，见下表，可在对应分類页 URL 中找到']">
+
+| 名称   | 编号 |
+| ---- | -- |
+| 政治   | 1  |
+| 社會   | 7  |
+| 全球   | 4  |
+| 生活   | 5  |
+| 兩岸   | 9  |
+| 地方   | 11 |
+| 產經   | 10 |
+| 文教科技 | 6  |
+| 環境   | 3  |
+| 社福人權 | 12 |
+
+</Route>
+
+### 標籤
+
+<Route author="nczitzk" example="/pts/tag/230" path="/pts/tag/:id" :paramsDesc="['標籤 id，可在对应標籤页 URL 中找到']"/>
+
 ## 共同网
 
 ### 最新报道
@@ -1590,23 +1629,23 @@ category 对应的关键词有
 
 ### 热门
 
-<Route author="hoilc Fatpandac" example="/hk01/hot" path="/hk01/hot" radar="1" rssbud="1"/>
+<Route author="hoilc Fatpandac nczitzk" example="/hk01/hot" path="/hk01/hot" radar="1" rssbud="1"/>
 
 ### 栏目
 
-<Route author="hoilc Fatpandac" example="/hk01/zone/11" path="/hk01/zone/:id" :paramsDesc="['栏目 id, 可在 URL 中找到']" radar="1" rssbud="1"/>
+<Route author="hoilc Fatpandac nczitzk" example="/hk01/zone/11" path="/hk01/zone/:id" :paramsDesc="['栏目 id, 可在 URL 中找到']" radar="1" rssbud="1"/>
 
 ### 子栏目
 
-<Route author="hoilc Fatpandac" example="/hk01/channel/391" path="/hk01/channel/:id" :paramsDesc="['子栏目 id, 可在 URL 中找到']" radar="1" rssbud="1"/>
+<Route author="hoilc Fatpandac nczitzk" example="/hk01/channel/391" path="/hk01/channel/:id" :paramsDesc="['子栏目 id, 可在 URL 中找到']" radar="1" rssbud="1"/>
 
 ### 专题
 
-<Route author="hoilc Fatpandac" example="/hk01/issue/649" path="/hk01/issue/:id" :paramsDesc="['专题 id, 可在 URL 中找到']" radar="1" rssbud="1"/>
+<Route author="hoilc Fatpandac nczitzk" example="/hk01/issue/649" path="/hk01/issue/:id" :paramsDesc="['专题 id, 可在 URL 中找到']" radar="1" rssbud="1"/>
 
 ### 标签
 
-<Route author="hoilc Fatpandac" example="/hk01/tag/2787" path="/hk01/tag/:id" :paramsDesc="['标签 id, 可在 URL 中找到']" radar="1" rssbud="1"/>
+<Route author="hoilc Fatpandac nczitzk" example="/hk01/tag/2787" path="/hk01/tag/:id" :paramsDesc="['标签 id, 可在 URL 中找到']" radar="1" rssbud="1"/>
 
 ## 香港電台
 
