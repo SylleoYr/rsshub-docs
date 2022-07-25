@@ -1336,9 +1336,9 @@ jsjxy.hbut.edu.cn 证书链不全，自建 RSSHub 可设置环境变量 NODE_TLS
 
 <Route author="nilleo" example="/ncepu/master/tzgg" path="/ncepu/master/:type" :paramsDesc="['类型参数']">
 
-| 类型 | 硕士招生信息 | 通知公告 |
-| -- | ------ | ---- |
-| 参数 | zsxx   | tzgg |
+| 类型 | 硕士招生信息 | 通知公告 | 研究生培养信息 |
+| -- | ------ | ---- | ------- |
+| 参数 | zsxx   | tzgg | pyxx    |
 
 </Route>
 
@@ -1720,6 +1720,14 @@ jsjxy.hbut.edu.cn 证书链不全，自建 RSSHub 可设置环境变量 NODE_TLS
 | cgxx | cjgs | zfcgyxgk |
 
 </Route>
+
+### 基建处
+
+<Route author="ret-1" example="/nju/jjc" path="/nju/jjc" />
+
+### 本科迎新
+
+<Route author="ret-1" example="/nju/admission" path="/nju/admission" />
 
 ## 南京工程学院
 
@@ -2402,6 +2410,16 @@ jsjxy.hbut.edu.cn 证书链不全，自建 RSSHub 可设置环境变量 NODE_TLS
 <Route author="2PoL" example="/tynu" path="/tynu" />
 
 ## 天津大学
+
+### 新闻网
+
+<Route author="SuperPung" example="/tju/news/focus" path="/tju/news/:type?" :paramsDesc="['默认为 `focus`']">
+
+|  聚焦天大 |   综合新闻  |   校内新闻   |  媒体报道 |   图说天大  |
+| :---: | :-----: | :------: | :---: | :-----: |
+| focus | general | internal | media | picture |
+
+</Route>
 
 ### 智能与计算学部
 
@@ -3305,6 +3323,16 @@ jsjxy.hbut.edu.cn 证书链不全，自建 RSSHub 可设置环境变量 NODE_TLS
 | 类型 | 学院新闻 | 通知公告 | 学术信息 | 学工动态 | 科研动态 |
 | -- | ---- | ---- | ---- | ---- | ---- |
 | 参数 | xyxw | tzgg | xsxx | xgdt | kydt |
+
+</Route>
+
+### 校长信箱
+
+<Route author="j1g5awi" example="/csu/mail" path="/csu/mail/:type?" :paramsDesc="['类型']">
+
+| 类型 | 校长信箱 | 党委信箱 |
+| -- | ---- | ---- |
+| 参数 | 01   | 02   |
 
 </Route>
 
