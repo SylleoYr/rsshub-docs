@@ -276,6 +276,20 @@ pageClass: routes
 
 <Route author="maokwen" example="/hugo/releases" path="/hugo/releases"/>
 
+## iFi audio
+
+### Download Hub
+
+<Route author="NavePnow" example="/ifi-audio/download/1503007035/44472" path="/ifi-audio/download/:val/:id" :paramsDesc="['商品 val', '商品 id']"/>
+
+::: warning 注意
+
+1.  打开网站 <https://ifi-audio.com/download-hub> 并打开 Inspect -> Network 调试面板
+2.  在网站中选择设备以及对应的 serial number，点击搜索
+3.  在 Network 面板中找到最后一个 <https://ifi-audio.com/wp-admin/admin-ajax.php> 请求，查看 Payload 中的 val 和 id，填写在 url 中
+
+:::
+
 ## ImageMagick
 
 ### Changelog
@@ -411,6 +425,12 @@ pageClass: routes
 
 见 [#playstation](/game.html#playstation)
 
+## Postman
+
+### Release Notes
+
+<Route author="nczitzk" example="/postman/release-notes" path="/postman/release-notes"/>
+
 ## Potplayer
 
 ### 版本历史
@@ -537,6 +557,39 @@ pageClass: routes
 
 <Route author="nczitzk" example="/totalcommander/whatsnew" path="/totalcommander/whatsnew"/>
 
+## TradingView
+
+### Blog
+
+<Route author="nczitzk" example="/tradingview/blog/en" path="/tradingview/blog/:language?" :paramsDesc="['语言，见下表，默认为 en 即英语']">
+
+语言
+
+| 编号 | 语言                  |
+| -- | ------------------- |
+| en | English             |
+| ru | Русский             |
+| ja | 日本語                 |
+| es | Español             |
+| tr | Türkçe              |
+| ko | 한국어                 |
+| it | Italiano            |
+| pt | Português do Brasil |
+| de | Deutsch             |
+| fr | Français            |
+| pl | Polski              |
+| id | Bahasa Indonesia    |
+| my | Bahasa Malaysia     |
+| tw | 繁體                  |
+| cn | 简体                  |
+| vi | Tiếng Việt          |
+| th | ภาษาไทย             |
+| sv | Svenska             |
+| ar | العربية             |
+| il | Hebrew              |
+
+</Route>
+
 ## Typora
 
 ### Changelog
@@ -546,6 +599,12 @@ pageClass: routes
 ### Dev Release Changelog
 
 <Route author="nczitzk" example="/typora/changelog-dev/macOS" path="/typora/changelog-dev/:os" :paramsDesc="['操作系统类型, 可选 `macOS` 或 `Windows` 与 `Linux`，默认为 `macOS`']"/>
+
+## VMware
+
+### Flings
+
+<Route author="nczitzk" example="/vmware/flings" path="/vmware/flings"/>
 
 ## Western Digital
 
