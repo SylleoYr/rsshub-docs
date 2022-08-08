@@ -1019,6 +1019,10 @@ Type 栏目：
 
 <Route author="nczitzk" example="/pts/tag/230" path="/pts/tag/:id" :paramsDesc="['標籤 id，可在对应標籤页 URL 中找到']"/>
 
+### 整理報導
+
+<Route author="nczitzk" example="/pts/live/62e8e4bbb4de2cbd74468b2b" path="/pts/live/:id" :paramsDesc="['報導 id，可在对应整理報導页 URL 中找到']"/>
+
 ## 共同网
 
 ### 最新报道
@@ -1100,9 +1104,29 @@ Type 栏目：
 
 ## 华尔街见闻
 
-### 华尔街见闻
+### 资讯
 
-<Route author="conanjunn" example="/wallstreetcn/news/global" path="/wallstreetcn/news/global" />
+<Route author="nczitzk" example="/wallstreetcn/global" path="/wallstreetcn/:category?" :paramsDesc="['资讯分类，默认`global`，见下表']">
+
+| id           | 分类 |
+| ------------ | -- |
+| global       | 最新 |
+| shares       | 股市 |
+| bonds        | 债市 |
+| commodities  | 商品 |
+| forex        | 外汇 |
+| enterprise   | 公司 |
+| asset-manage | 资管 |
+| tmt          | 科技 |
+| estate       | 地产 |
+| car          | 汽车 |
+| medicine     | 医药 |
+
+</Route>
+
+### 最新
+
+<Route author="conanjunn nczitzk" example="/wallstreetcn/news/global" path="/wallstreetcn/news/global" />
 
 ### 实时快讯
 
@@ -1113,6 +1137,10 @@ Type 栏目：
 | global | a-stock | us-stock | hk-stock | forex | commodity | financing |
 
 </Route>
+
+### 最热文章
+
+<Route author="nczitzk" example="/wallstreetcn/hot" path="/wallstreetcn/hot/:period?" :paramsDesc="['时期，可选 `day` 即 当日 或 `week` 即 当周，默认为当日']"/>
 
 ## 华尔街日报 The Wall Street Journal (WSJ)
 
