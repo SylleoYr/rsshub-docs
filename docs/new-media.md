@@ -801,6 +801,12 @@ Edition
 
 </Route>
 
+## Macfilos
+
+### Blog
+
+<Route author="nczitzk" example="/macfilos/blog" path="/macfilos/blog" />
+
 ## MakeUseOf
 
 <Route author="nczitzk" example="/makeuseof" path="/makeuseof/:category?" :paramsDesc="['分类，默认为 Trending']"/>
@@ -1769,6 +1775,16 @@ Supported sub-sites:
 
 </Route>
 
+## 島民衛星 Islander
+
+### 事件分析
+
+<Route author="TonyRL" example="/islander/search" path="/islander/search" radar="1" rssbud="1"/>
+
+### 單日焦點
+
+<Route author="TonyRL" example="/islander/top30event" path="/islander/top30event" radar="1" rssbud="1"/>
+
 ## 得到
 
 ### 首页
@@ -2273,6 +2289,10 @@ others = 热点新闻 + 滚动新闻
 ### 首页资讯
 
 <Route author="HenryQW" example="/huxiu/article" path="/huxiu/article" />
+
+### 24 小时
+
+<Route author="nczitzk" example="/huxiu/moment" path="/huxiu/moment" />
 
 ### 标签
 
@@ -4357,4 +4377,4 @@ QueryString:
 | ---- | ----- | ----- |
 |      | zh-hk | zh-tw |
 
- </Route>
+</Route>
