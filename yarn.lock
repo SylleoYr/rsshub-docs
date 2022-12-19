@@ -1546,39 +1546,39 @@
     domhandler "^5.0.3"
     selderee "^0.10.0"
 
-"@sentry/core@7.24.2":
-  version "7.24.2"
-  resolved "https://registry.yarnpkg.com/@sentry/core/-/core-7.24.2.tgz#d3b69cc9c5703a4b35be1d648379804b099894e6"
-  integrity sha512-CDfrVvr3PQ0qImJv7/6yN/5hxhwxy1HicxTL9K5RwSDoXqgK3kUGv/WmTvPNIVB2RQKodLwzS2T52NFRxRoqNw==
+"@sentry/core@7.27.0":
+  version "7.27.0"
+  resolved "https://registry.yarnpkg.com/@sentry/core/-/core-7.27.0.tgz#77d0964d5625430a491f274b6b1f64473a361757"
+  integrity sha512-9WkHMllGNOr6S55N2HKJYJj/2mog5Kv6mjruqlcHHPSgcKFA8bjwBXJTghy6UzwtGd14cyS/X7h5AVUkvuXTMw==
   dependencies:
-    "@sentry/types" "7.24.2"
-    "@sentry/utils" "7.24.2"
+    "@sentry/types" "7.27.0"
+    "@sentry/utils" "7.27.0"
     tslib "^1.9.3"
 
-"@sentry/node@7.24.2":
-  version "7.24.2"
-  resolved "https://registry.yarnpkg.com/@sentry/node/-/node-7.24.2.tgz#7dcb2692876267e2f3f9085e60c3d2f7075ddf35"
-  integrity sha512-wNUwiPOBogJmqmpwsbnsgBatUqbhvUpv8HChsBI1XLgCm6DlNlpb1BQHn2Z9PEMxvr4V43HJIdsfyrTC2SpAAA==
+"@sentry/node@7.27.0":
+  version "7.27.0"
+  resolved "https://registry.yarnpkg.com/@sentry/node/-/node-7.27.0.tgz#a43ca519b2cbcbc5eade9bae98cf1c26da7cb82f"
+  integrity sha512-wp/nbkl1vi3Lajaf9AMCxyDTJP8V4GEiyg0jaG4p3MSF3/6t0+C5Lqqp3GunQZCyXWqDrtuLvNpirtp2egsBiQ==
   dependencies:
-    "@sentry/core" "7.24.2"
-    "@sentry/types" "7.24.2"
-    "@sentry/utils" "7.24.2"
+    "@sentry/core" "7.27.0"
+    "@sentry/types" "7.27.0"
+    "@sentry/utils" "7.27.0"
     cookie "^0.4.1"
     https-proxy-agent "^5.0.0"
     lru_map "^0.3.3"
     tslib "^1.9.3"
 
-"@sentry/types@7.24.2":
-  version "7.24.2"
-  resolved "https://registry.yarnpkg.com/@sentry/types/-/types-7.24.2.tgz#2ef728db8eea14de8ba916896837d0cbeb3d28da"
-  integrity sha512-x2LEnKBPzUVzTGspvB0CjZmt1dWeJsLVHGeDKPUMUm004nIscFCxJsmYefqaJQdaIUMqDit5ApwcmKchuK6VKQ==
+"@sentry/types@7.27.0":
+  version "7.27.0"
+  resolved "https://registry.yarnpkg.com/@sentry/types/-/types-7.27.0.tgz#1af8eae05465ad00722e319c066c950cc389b585"
+  integrity sha512-vapN3jchu3/WEMWQkrCOy2XDlOLj0l7IewYXKMr15Q21dlfM1QZMigU/r5rtYj5L8a2ISIHx+cRECxX5UIKH7w==
 
-"@sentry/utils@7.24.2":
-  version "7.24.2"
-  resolved "https://registry.yarnpkg.com/@sentry/utils/-/utils-7.24.2.tgz#7120a8d36bd1d05043c902a0f22fbc2012fe2116"
-  integrity sha512-VuuYEF39v43Qk6YZMid8Em/N0HqCsS5ItuTSvunMtBai2dzDAIkJ2LqemF95wWFAXrzpLy4Nx3QyGVHayMn31A==
+"@sentry/utils@7.27.0":
+  version "7.27.0"
+  resolved "https://registry.yarnpkg.com/@sentry/utils/-/utils-7.27.0.tgz#1a0b4e62db32fb56e737c59bd67c847bb888fa8a"
+  integrity sha512-8e5cmjbeuxETPxPEymyyGEYlBbJO1IMveTlcxkTFySPU6nNz2oAIiqPVHv2QgFJJvRv79/i/4Tyl5gFMOW0+AA==
   dependencies:
-    "@sentry/types" "7.24.2"
+    "@sentry/types" "7.27.0"
     tslib "^1.9.3"
 
 "@sinclair/typebox@^0.24.1":
@@ -2055,10 +2055,10 @@
   dependencies:
     "@types/node" "*"
 
-"@vercel/nft@0.22.5":
-  version "0.22.5"
-  resolved "https://registry.yarnpkg.com/@vercel/nft/-/nft-0.22.5.tgz#951bd7589ceebdd3e280afcf3a13bdacf83f6b7e"
-  integrity sha512-mug57Wd1BL7GMj9gXMgMeKUjdqO0e4u+0QLPYMFE1rwdJ+55oPy6lp3nIBCS8gOvigT62UI4QKUL2sGqcoW4Hw==
+"@vercel/nft@0.22.6":
+  version "0.22.6"
+  resolved "https://registry.yarnpkg.com/@vercel/nft/-/nft-0.22.6.tgz#edb30d300bb809c0945ea4c7b87e56f634885541"
+  integrity sha512-gTsFnnT4mGxodr4AUlW3/urY+8JKKB452LwF3m477RFUJTAaDmcz2JqFuInzvdybYIeyIv1sSONEJxsxnbQ5JQ==
   dependencies:
     "@mapbox/node-pre-gyp" "^1.0.5"
     "@rollup/pluginutils" "^4.0.0"
@@ -8606,10 +8606,10 @@ json-stringify-safe@^5.0.1, json-stringify-safe@~5.0.1:
   resolved "https://registry.yarnpkg.com/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
   integrity sha512-ZClg6AaYvamvYEE82d3Iyd3vSSIjQ+odgjaTzRuO3s7toCdFKczob2i0zCh7JE8kWn17yvAWhUVxvqGwUalsRA==
 
-json5@2.2.1, json5@^2.1.2, json5@^2.2.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/json5/-/json5-2.2.1.tgz#655d50ed1e6f95ad1a3caababd2b0efda10b395c"
-  integrity sha512-1hqLFMSrGHRHxav9q9gNjJ5EXznIxGVO09xQRrwplcS8qs28pZ8s8hupZAmqDwZUmVZ2Qb2jnyPOWcDH8m8dlA==
+json5@2.2.2, json5@^2.1.2, json5@^2.2.1:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/json5/-/json5-2.2.2.tgz#64471c5bdcc564c18f7c1d4df2e2297f2457c5ab"
+  integrity sha512-46Tk9JiOL2z7ytNQWFLpj99RZkVgeHf87yGQKsIkaPz1qSH9UczKH1rO7K3wgRselo0tYMUNfecYpm/p1vC7tQ==
 
 json5@^0.5.0:
   version "0.5.1"
@@ -8869,16 +8869,6 @@ libbase64@1.2.1:
   resolved "https://registry.yarnpkg.com/libbase64/-/libbase64-1.2.1.tgz#fb93bf4cb6d730f29b92155b6408d1bd2176a8c8"
   integrity sha512-l+nePcPbIG1fNlqMzrh68MLkX/gTxk/+vdvAb388Ssi7UuUN31MI44w4Yf33mM3Cm4xDfw48mdf3rkdHszLNew==
 
-libmime@5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/libmime/-/libmime-5.1.0.tgz#d9a1c4a85c982fa4e64c2c841f95e3827c3f71d2"
-  integrity sha512-xOqorG21Va+3CjpFOfFTU7SWohHH2uIX9ZY4Byz6J+lvpfvc486tOAT/G9GfbrKtJ9O7NCX9o0aC2lxqbnZ9EA==
-  dependencies:
-    encoding-japanese "2.0.0"
-    iconv-lite "0.6.3"
-    libbase64 "1.2.1"
-    libqp "1.1.0"
-
 libmime@5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/libmime/-/libmime-5.2.0.tgz#c4ed5cbd2d9fdd27534543a68bb8d17c658d51d8"
@@ -8888,11 +8878,6 @@ libmime@5.2.0:
     iconv-lite "0.6.3"
     libbase64 "1.2.1"
     libqp "2.0.1"
-
-libqp@1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/libqp/-/libqp-1.1.0.tgz#f5e6e06ad74b794fb5b5b66988bf728ef1dedbe8"
-  integrity sha512-4Rgfa0hZpG++t1Vi2IiqXG9Ad1ig4QTmtuZF946QJP4bPqOYC78ixUXgz5TW/wE7lNaNKlplSYTxQ+fR2KZ0EA==
 
 libqp@2.0.1:
   version "2.0.1"
@@ -9194,10 +9179,10 @@ magnet-uri@^6.2.0:
     bep53-range "^1.1.0"
     thirty-two "^1.0.2"
 
-mailparser@3.6.0:
-  version "3.6.0"
-  resolved "https://registry.yarnpkg.com/mailparser/-/mailparser-3.6.0.tgz#e0fe18a8c516ac6e87e8f3d0cb75d9a806a4ca31"
-  integrity sha512-ACFFgrL7e9Ljkjh+wSxlMxbDwMu7fb3wn/HYL8DTun4mYqtDYysKYzdgx95A15Offhtml9lEbum4cn2sYav3JQ==
+mailparser@3.6.2:
+  version "3.6.2"
+  resolved "https://registry.yarnpkg.com/mailparser/-/mailparser-3.6.2.tgz#f4da034206a9f3270242298371d8d53ae2dc30f3"
+  integrity sha512-f9YLwzxFgst+bjNOE448PiCBG26SOFTY+6sZ6mzTIDwmh7srSS8NhLMYP8IhivdKu+YzNgxC9oYYk5GY9PDcsA==
   dependencies:
     encoding-japanese "2.0.0"
     he "1.2.0"
@@ -9205,18 +9190,18 @@ mailparser@3.6.0:
     iconv-lite "0.6.3"
     libmime "5.2.0"
     linkify-it "4.0.1"
-    mailsplit "5.3.2"
+    mailsplit "5.4.0"
     nodemailer "6.8.0"
     tlds "1.235.0"
 
-mailsplit@5.3.2:
-  version "5.3.2"
-  resolved "https://registry.yarnpkg.com/mailsplit/-/mailsplit-5.3.2.tgz#c344c019f631be4f54d5213509637127e3e3dd66"
-  integrity sha512-coES12hhKqagkuBTJoqERX+y9bXNpxbxw3Esd07auuwKYmcagouVlgucyIVRp48fnswMKxcUtLoFn/L1a75ynQ==
+mailsplit@5.4.0:
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/mailsplit/-/mailsplit-5.4.0.tgz#9f4692fadd9013e9ce632147d996931d2abac6ba"
+  integrity sha512-wnYxX5D5qymGIPYLwnp6h8n1+6P6vz/MJn5AzGjZ8pwICWssL+CCQjWBIToOVHASmATot4ktvlLo6CyLfOXWYA==
   dependencies:
     libbase64 "1.2.1"
-    libmime "5.1.0"
-    libqp "1.1.0"
+    libmime "5.2.0"
+    libqp "2.0.1"
 
 make-dir@^2.0.0:
   version "2.1.0"
@@ -11415,10 +11400,10 @@ pupa@^2.0.1:
   dependencies:
     escape-goat "^2.0.0"
 
-puppeteer-core@19.4.0:
-  version "19.4.0"
-  resolved "https://registry.yarnpkg.com/puppeteer-core/-/puppeteer-core-19.4.0.tgz#3f52945d8cfa20cf8721a7902afcd8a1a299b54d"
-  integrity sha512-gG/jxseleZStinBn86x8r7trjcE4jcjx1hIQWOpACQhquHYMuKnrWxkzg+EDn8sN3wUtF/Ry9mtJgjM49oUOFQ==
+puppeteer-core@19.4.1:
+  version "19.4.1"
+  resolved "https://registry.yarnpkg.com/puppeteer-core/-/puppeteer-core-19.4.1.tgz#f4875943841ebdb6fc2ad7a475add958692b0237"
+  integrity sha512-JHIuqtqrUAx4jGOTxXu4ilapV2jabxtVMA/e4wwFUMvtSsqK4nVBSI+Z1SKDoz7gRy/JUIc8WzmfocCa6SIZ1w==
   dependencies:
     cross-fetch "3.1.5"
     debug "4.3.4"
@@ -11429,7 +11414,7 @@ puppeteer-core@19.4.0:
     rimraf "3.0.2"
     tar-fs "2.1.1"
     unbzip2-stream "1.4.3"
-    ws "8.10.0"
+    ws "8.11.0"
 
 puppeteer-extra-plugin-stealth@2.11.1:
   version "2.11.1"
@@ -11478,17 +11463,16 @@ puppeteer-extra@3.3.4:
     debug "^4.1.1"
     deepmerge "^4.2.2"
 
-puppeteer@19.4.0:
-  version "19.4.0"
-  resolved "https://registry.yarnpkg.com/puppeteer/-/puppeteer-19.4.0.tgz#3adfcb415e96d7b5900a66a1097947272313ee9f"
-  integrity sha512-sRzWEfFSZCCcFUJflGtYI2V7A6qK4Jht+2JiI2LZgn+Nv/LOZZsBDEaGl98ZrS8oEcUA5on4p2yJbE0nzHNzIg==
+puppeteer@19.4.1:
+  version "19.4.1"
+  resolved "https://registry.yarnpkg.com/puppeteer/-/puppeteer-19.4.1.tgz#cac7d3f0084badebb8ebacbe6f4d7262e7f21818"
+  integrity sha512-PCnrR13B8A+VSEDXRmrNXRZbrkF1tfsI1hKSC7vs13eNS6CUD3Y4FA8SF8/VZy+Pm1kg5AggJT2Nu3HLAtGkFg==
   dependencies:
     cosmiconfig "8.0.0"
-    devtools-protocol "0.0.1068969"
     https-proxy-agent "5.0.1"
     progress "2.0.3"
     proxy-from-env "1.1.0"
-    puppeteer-core "19.4.0"
+    puppeteer-core "19.4.1"
 
 q@^1.1.2:
   version "1.5.1"
@@ -11576,10 +11560,10 @@ ramda@^0.26.1:
   resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.26.1.tgz#8d41351eb8111c55353617fc3bbffad8e4d35d06"
   integrity sha512-hLWjpy7EnsDBb0p+Z3B7rPi3GDeRG5ZtiI33kJhTt+ORCd38AbAIjB/9zRIUoeTbE/AVX5ZkU7m6bznsvrf8eQ==
 
-rand-user-agent@1.0.93:
-  version "1.0.93"
-  resolved "https://registry.yarnpkg.com/rand-user-agent/-/rand-user-agent-1.0.93.tgz#1b1aa5035c66892328878bf63e9b0916a73a0e0d"
-  integrity sha512-S9+nr4yaTUtzhLi4VBiPXydFI/e95S7NcJPG4D80arZPu0Q90EjTjJZNbCW5QGLKdc6Ze9A0S7MBK5gs97LBug==
+rand-user-agent@1.0.94:
+  version "1.0.94"
+  resolved "https://registry.yarnpkg.com/rand-user-agent/-/rand-user-agent-1.0.94.tgz#30d7977918cb9b191a8729cb000dd5e0094358ab"
+  integrity sha512-BxiTnoiSHU6QJyIjL7DMCDEW0YbVgNbAqTN0ZQTPpXMf7FKTge1i05OnM8aUvkcLNfpcOM/CNdldgfHzluAZSA==
 
 randombytes@^2.0.0, randombytes@^2.0.1, randombytes@^2.0.5, randombytes@^2.1.0:
   version "2.1.0"
@@ -11621,10 +11605,10 @@ rc@1.2.8, rc@^1.2.8:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-re2@1.17.8:
-  version "1.17.8"
-  resolved "https://registry.yarnpkg.com/re2/-/re2-1.17.8.tgz#c32ade6c78c33722b947d0dcfbddd7bfc259c794"
-  integrity sha512-KM5zYGb1BlPPU8xLq9kkxwMq2wntoluIbjELcPSRS32hxgJqked3ahmtzu6vY1SMqjxHfutStF2b3KuRjcJHHg==
+re2@1.18.0:
+  version "1.18.0"
+  resolved "https://registry.yarnpkg.com/re2/-/re2-1.18.0.tgz#6d6f47c5aaa436eb7a7d68b260f8cf25d7948619"
+  integrity sha512-MoCYZlJ9YUgksND9asyNF2/x532daXU/ARp1UeJbQ5flMY6ryKNEhrWt85aw3YluzOJlC3vXpGgK2a1jb0b4GA==
   dependencies:
     install-artifact-from-github "^1.3.1"
     nan "^2.17.0"
@@ -13476,10 +13460,10 @@ tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   resolved "https://registry.yarnpkg.com/tweetnacl/-/tweetnacl-0.14.5.tgz#5ae68177f192d4456269d108afa93ff8743f4f64"
   integrity sha512-KXXFFdAbFXY4geFIwoyNK+f5Z1b7swfXABfL7HXCmoIWMKU3dmS26672A4EeQtDzLKy7SXmfBu51JolvEKwtGA==
 
-twitter-api-v2@1.12.9:
-  version "1.12.9"
-  resolved "https://registry.yarnpkg.com/twitter-api-v2/-/twitter-api-v2-1.12.9.tgz#447fc4efb693bbb7983a6dcec2de5da7e0f27648"
-  integrity sha512-nmKwcUiXgoEfcOtAH/hYojy0oSxbouWvvNsHVphiHSW9x9aus2Jdg9/NRB2Gzyq5G6xl+EkjUlEWwBQjp1FOfg==
+twitter-api-v2@1.12.10:
+  version "1.12.10"
+  resolved "https://registry.yarnpkg.com/twitter-api-v2/-/twitter-api-v2-1.12.10.tgz#355d20d5af97a83b75694ff15396f7099a296d11"
+  integrity sha512-gLo4u3EZM8zt2CRZ5uJaWpGVoH1/xR0veF74E3K7WCQXUONoZVc0pbg6dGfoPBOmEXhS4QHGcgAMj1TRU+OSXA==
 
 type-check@^0.4.0, type-check@~0.4.0:
   version "0.4.0"
@@ -14567,10 +14551,10 @@ write-file-atomic@^4.0.1:
     imurmurhash "^0.1.4"
     signal-exit "^3.0.7"
 
-ws@8.10.0:
-  version "8.10.0"
-  resolved "https://registry.yarnpkg.com/ws/-/ws-8.10.0.tgz#00a28c09dfb76eae4eb45c3b565f771d6951aa51"
-  integrity sha512-+s49uSmZpvtAsd2h37vIPy1RBusaLawVe8of+GyEPsaJTCMpj/2v8NpeK1SHXjBlQ95lQTmQofOJnFiLoaN3yw==
+ws@8.11.0, ws@^8.11.0:
+  version "8.11.0"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-8.11.0.tgz#6a0d36b8edfd9f96d8b25683db2f8d7de6e8e143"
+  integrity sha512-HPG3wQd9sNQoT9xHyNCXoDUa+Xw/VevmY9FoHyQ+g+rrMn4j6FB4np7Z0OhdTgjx6MgQLK7jwSy1YecU1+4Asg==
 
 ws@^6.2.1:
   version "6.2.2"
@@ -14578,11 +14562,6 @@ ws@^6.2.1:
   integrity sha512-zmhltoSR8u1cnDsD43TX59mzoMZsLKqUweyYBAIvTngR3shc0W6aOZylZmq/7hqyVxPdi+5Ud2QInblgyE72fw==
   dependencies:
     async-limiter "~1.0.0"
-
-ws@^8.11.0:
-  version "8.11.0"
-  resolved "https://registry.yarnpkg.com/ws/-/ws-8.11.0.tgz#6a0d36b8edfd9f96d8b25683db2f8d7de6e8e143"
-  integrity sha512-HPG3wQd9sNQoT9xHyNCXoDUa+Xw/VevmY9FoHyQ+g+rrMn4j6FB4np7Z0OhdTgjx6MgQLK7jwSy1YecU1+4Asg==
 
 wuzzy@^0.1.4:
   version "0.1.8"
