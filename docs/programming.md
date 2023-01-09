@@ -389,6 +389,12 @@ GitHub 官方也提供了一些 RSS:
 
 <Route author="cf020031308 nczitzk xie-dongping" example="/hackernews/threads/comments_list/dang" path="/hackernews/:section?/:type?/:user?" :paramsDesc="['内容分区，见上表，默认为 `index`', '链接类型，见上表，默认为 `sources`', '设定用户，只在 `threads` 和 `submitted` 分区有效']" />
 
+## HackMD
+
+### Profile
+
+<Route author="Yukaii kaiix" example="/hackmd/profile/hackmd" path="/hackmd/profile/:path" :paramsDesc="['個人名稱路徑，或團隊網址']" radar="1"/>
+
 ## HelloGitHub
 
 ### 热门
@@ -775,6 +781,34 @@ GitHub 官方也提供了一些 RSS:
 
 <Route author="kaiili" example="/secnews" path="/secnews" />
 
+## 北京智源人工智能研究院
+
+### 智源社区
+
+<Route author="TonyRL" example="/baai/hub" path="/baai/hub/:tagId?/:sort?/:range?" :paramsDesc="['社群 ID，可在 [社群页](https://hub.baai.ac.cn/taglist) 或 URL 中找到', '分类，见下表，默认为 `new`', '时间跨度，仅在分类 `readCnt` 时有效']" radar="1">
+
+分类
+
+| 最热  | 最新  | 头条      |
+| --- | --- | ------- |
+| hot | new | readCnt |
+
+时间跨度
+
+| 3 天 | 7 天 | 30 天 |
+| --- | --- | ---- |
+| 3   | 7   | 30   |
+
+</Route>
+
+### 智源社区 - 活动
+
+<Route author="TonyRL" example="/baai/hub/events" path="/baai/hub/events" radar="1"/>
+
+### 智源社区 - 评论
+
+<Route author="TonyRL" example="/baai/hub/comments" path="/baai/hub/comments" radar="1"/>
+
 ## 饿了么开放平台
 
 ### 商家开放平台公告
@@ -1015,7 +1049,7 @@ GitHub 官方也提供了一些 RSS:
 
 ### 用户博客
 
-<Route author="ftiasch" example="/luogu/user/blog/ftiasch" path="/luogu/user/blog/:username" :paramsDesc="['用户名']" radar="1" rssbud="1"/>
+<Route author="ftiasch" example="/luogu/user/blog/ftiasch" path="/luogu/user/blog/:name" :paramsDesc="['博客名称']" radar="1" rssbud="1"/>
 
 ## 码农俱乐部
 
