@@ -163,6 +163,29 @@ pageClass: routes
 
 该网站原始 RSS 数据源无人维护，故重新抓取数据并生成数据源。
 
+## LinkedIn 领英中国
+
+### Jobs
+
+<Route author="bigfei" example="/linkedin/cn/jobs/Software" path="/linkedin/cn/jobs/:keywords?" :paramsDesc="['搜索关键字']" radar="1">
+
+另外，可以通过添加额外的以下 query 参数来输出满足特定要求的工作职位：
+
+| 参数         | 描述                               | 举例                                        | 默认值     |
+| ---------- | -------------------------------- | ----------------------------------------- | ------- |
+| `geo`      | geo 编码                           | 102890883（中国）、102772228（上海）、103873152（北京） | 空       |
+| `remote`   | 是否只显示远程工作                        | `true/false`                              | `false` |
+| `location` | 工作地点                             | `china/shanghai/beijing`                  | 空       |
+| `relevant` | 排序方式 (true: 按相关性排序，false： 按日期排序) | `true/false`                              | `false` |
+| `period`   | 发布时间                             | `1/7/30`                                  | 空       |
+
+例如：
+[`/linkedin/cn/jobs/Software?location=shanghai&period=1`](https://rsshub.app/linkedin/cn/jobs/Software?location=shanghai\&period=1): 查找所有在上海的今日发布的所有 Software 工作
+
+**为了方便起见，建议您在 [LinkedIn.cn](https://www.linkedin.cn/incareer/jobs/search) 上进行搜索，并使用 [RSSHub Radar](https://github.com/DIYgod/RSSHub-Radar) 加载特定的 feed。**
+
+</Route>
+
 ## MiniFlux
 
 因需设置 API Key，故请自行架设 RSSHub。API 密钥则请于 MiniFlux 实例中的 `设置` -> `API密钥` -> `创建一个新的API密钥` 处获取。
@@ -373,7 +396,7 @@ type 为 all 时，category 参数不支持 cost 和 free
 
 ### 发现用户
 
-<Route author="sanmmm" example="/afdian/explore/hot/所有" path="/afdian/explore/:type/:category?" :paramsDesc="['分类', '目录类型, 默认为 `所有`']">
+<Route author="sanmmm" example="/afdian/explore/hot/所有" path="/afdian/explore/:type/:category?" :paramsDesc="['分类', '目录类型，默认为 `所有`']">
 分类
 
 | 推荐  | 最热  |
@@ -390,7 +413,7 @@ type 为 all 时，category 参数不支持 cost 和 free
 
 ### 用户动态
 
-<Route author="sanmmm" example="/afdian/dynamic/@afdian" path="/afdian/dynamic/:uid?" :paramsDesc="['用户id, 用户动态页面url里可找到']"/>
+<Route author="sanmmm" example="/afdian/dynamic/@afdian" path="/afdian/dynamic/:uid?" :paramsDesc="['用户id，用户动态页面url里可找到']"/>
 
 ## 澳門特別行政區政府各公共部門獎助貸學金服務平台
 
@@ -404,15 +427,15 @@ type 为 all 时，category 参数不支持 cost 和 free
 
 </Route>
 
-## 百度搜索风云榜
+## 百度热搜
 
 ### 榜单
 
-<Route author="xyqfer" example="/baidu/topwords/1" path="/baidu/topwords/:boardId?" :paramsDesc="['榜单 id, 默认为`1`']">
+<Route author="xyqfer" example="/baidu/top" path="/baidu/top/:board?" :paramsDesc="['榜单，默认为 `realtime`']" radar="1">
 
-| 实时热点 | 今日热点 | 七日热点 | 民生热点 | 娱乐热点 | 体育热点 |
-| ---- | ---- | ---- | ---- | ---- | ---- |
-| 1    | 341  | 42   | 342  | 344  | 11   |
+| 热搜榜      | 小说榜   | 电影榜   | 电视剧榜     | 汽车榜 | 游戏榜  |
+| -------- | ----- | ----- | -------- | --- | ---- |
+| realtime | novel | movie | teleplay | car | game |
 
 </Route>
 
