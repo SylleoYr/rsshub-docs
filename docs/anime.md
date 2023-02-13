@@ -95,6 +95,12 @@ pageClass: routes
 
 </Route>
 
+## ACG17
+
+### 全部文章
+
+<Route author="SunBK201" example="/acg17/post/all" path="/acg17/post/all" radar="1" />
+
 ## AGE 动漫
 
 ### 最近更新
@@ -582,7 +588,7 @@ Sources
 
 ### 漫画更新
 
-<Route author="KellyHwong" path="/cartoonmad/comic/:id" example="/cartoonmad/comic/5827" :paramsDesc="['漫画ID']"/>
+<Route author="KellyHwong" path="/cartoonmad/comic/:id" example="/cartoonmad/comic/5827" :paramsDesc="['漫画ID']" radar="1"/>
 
 ## 风之动漫
 
