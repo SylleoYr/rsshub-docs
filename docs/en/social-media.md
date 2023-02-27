@@ -138,19 +138,39 @@ Type
 
 <RouteEn author="zphw" example="/gab/popular/hot" path="/gab/popular/:sort?" :paramsDesc="['Sort by, `hot` to be Hot Posts and `top` to be Top Posts. Default: hot']" />
 
+## GETTR
+
+### User timeline
+
+<RouteEn author="TonyRL" example="/gettr/user/jasonmillerindc" path="/gettr/user/:id" :paramsDesc="['User id']" radar="1" rssbud="1"/>
+
 ## Instagram
 
 ::: warning
 
-Due to Instagram API restrictions, you have to setup your credentials on the server. See deployment guide for more.
+Due to Instagram Private API restrictions, you have to setup your credentials on the server. 2FA is not supported. See [deployment guide](https://docs.rsshub.app/en/install/) for more.
 
-If you don't want to setup credentials, use Picuki.
+If you don't want to setup credentials, you can use [Picuki](#picuki).
 
 :::
 
-### User Profile
+### User Profile / Hashtag - Private API
 
-<RouteEn author="oppilate DIYgod" example="/instagram/user/stefaniejoosten" path="/instagram/:category/:key" :paramsDesc="['Feed category. Only user category is supported for now.','Key for such category. E.g. username/ID for user feed']" radar="1" anticrawler="1"/>
+<RouteEn author="oppilate DIYgod" example="/instagram/user/stefaniejoosten" path="/instagram/:category/:key" :paramsDesc="['Feed category, see table below','Username / Hashtag name']" radar="1" anticrawler="1" selfhost="1">
+
+| User timeline | Hashtag |
+| ---------- | ---- |
+| user       | tags  |
+
+::: tip Tips
+It's highly recommended to deploy with Redis cache enabled.
+:::
+
+</RouteEn>
+
+### User Profile / Hashtag - Cookie
+
+<RouteEn author="TonyRL" example="/instagram/2/user/stefaniejoosten" path="/instagram/2/:category/:key" :paramsDesc="['Feed category, see table above','Username / Hashtag name']" radar="1" anticrawler="1" selfhost="1" />
 
 ## Lofter
 

@@ -150,11 +150,21 @@ pageClass: routes
 
 输出 Transcript 从而提供比官方（podcast）更好的使用体验。
 
+## 6v 电影
+
+### 最新电影
+
+<Route author="tc9011" example="/6v123/latestMovies" path="/6v123/latestMovies" supportBT="1"/>
+
+### 最新电视剧
+
+<Route author="tc9011" example="/6v123/latestTVSeries" path="/6v123/latestTVSeries" supportBT="1"/>
+
 ## 7mmtv
 
 ### 分类
 
-<Route author="nczitzk" example="/7mmtv/zh/censored_list/all" path="/7mmtv/:language?/:category?/:type?" :paramsDesc="['语言，见下表，默认为 `en` 即英语', '分类，见下表，默认为 `censored_list` 即 有碼AV', '空间，见下表，默认为全部']">
+<Route author="nczitzk" example="/7mmtv/zh/censored_list/all" path="/7mmtv/:language?/:category?/:type?" :paramsDesc="['语言，见下表，默认为 `en` 即英语', '分类，见下表，默认为 `censored_list` 即 有碼AV', '空间，见下表，默认为全部']" anticrawler="1">
 
 **语言**
 
@@ -182,7 +192,7 @@ pageClass: routes
 
 ### 制作商
 
-<Route author="nczitzk" example="/7mmtv/zh/amateurjav_makersr/1752" path="/7mmtv/:language?/:category?/:id?" :paramsDesc="['语言，见下表，默认为 `en` 即英语', '分类，见下表', '编号，见下表']">
+<Route author="nczitzk" example="/7mmtv/zh/amateurjav_makersr/1752" path="/7mmtv/:language?/:category?/:id?" :paramsDesc="['语言，见下表，默认为 `en` 即英语', '分类，见下表', '编号，见下表']" anticrawler="1">
 
 **语言**
 
@@ -1551,19 +1561,19 @@ JavDB 有多个备用域名，本路由默认使用永久域名 <https://javdb.c
 
 ### 分区帖子
 
-<Route author="qiwihui junfengP nczitzk" example="/dsndsht23/36/368" path="/dsndsht23/:subforumid?/:type?" supportBT="1" :paramsDesc="['版块 id 或板块名称（见下表）, 为空默认高清中文字幕', '类型 id, 可在分区类型过滤后的 URL 中找到']">
+<Route author="qiwihui junfengP nczitzk" example="/sehuatang/36/368" path="/sehuatang/:subforumid?/:type?" supportBT="1" :paramsDesc="['版块 id 或板块名称（见下表）, 为空默认高清中文字幕', '类型 id, 可在分区类型过滤后的 URL 中找到']">
 
 **原创 BT 电影**
 
-| 每日合集 | 国产原创 | 亚洲无码原创 | 亚洲有码原创 | 高清中文字幕 | 三级写真 | 亚洲名站有码 | VR 系列 | 欧美无码 | 动漫原创 | AI 换脸电影 | 原档收藏 WMV | 综合讨论区 |
-| ---- | ---- | ------ | ------ | ------ | ---- | ------ | ----- | ---- | ---- | ------- | -------- | ----- |
-| mrhj | gcyc | yzwmyc | yzymyc | gqzwzm | sjxz | yzmzym | vr    | omwm | dmyc | ai      | ydsc     | zhtlq |
+| 国产原创 | 亚洲无码原创 | 亚洲有码原创 | 高清中文字幕 | 三级写真 | VR 视频 | 素人有码 | 欧美无码 | 韩国主播 | 动漫原创 | 综合讨论 |
+| ---- | ------ | ------ | ------ | ---- | ----- | ---- | ---- | ---- | ---- | ---- |
+| gcyc | yzwmyc | yzymyc | gqzwzm | sjxz | vr    | srym | omwm | hgzb | dmyc | zhtl |
 
 **色花图片**
 
-| 华人性爱自拍 | 华人街拍区 | 亚洲性爱 | 欧美性爱 | 卡通动漫 |
-| ------ | ----- | ---- | ---- | ---- |
-| hrxazp | hrjpq | yzxa | omxa | ktdm |
+| 原创自拍 | 转贴自拍 | 华人街拍 | 亚洲性爱 | 欧美性爱 | 卡通动漫 | 套图下载 |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| yczp | ztzp | hrjp | yzxa | omxa | ktdm | ttxz |
 
 </Route>
 
