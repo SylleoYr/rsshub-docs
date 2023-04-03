@@ -234,6 +234,10 @@ pageClass: routes
 
 </Route>
 
+### 研究生招生信息网
+
+<Route author="yanbot-team" example="/ustb/yzxc/tzgg" path="/ustb/yzxc/tzgg" />
+
 ### 北京科技大学天津学院
 
 <Route author="henbf" example="/ustb/tj/news/all" path="/ustb/tj/news/:type" :paramsDesc="['默认为 `all`']">
@@ -1650,6 +1654,16 @@ jsjxy.hbut.edu.cn 证书链不全，自建 RSSHub 可设置环境变量 NODE_TLS
 
 </Route>
 
+## 江苏海洋大学
+
+### 官网通知公告
+
+<Route author="real-jiakai" example="/jou/tzgg" path="/jou/tzgg" radar="1" />
+
+### 研招网通知公告
+
+<Route author="real-jiakai" example="/jou/yztzgg" path="/jou/yztzgg" radar="1" />
+
 ## 井冈山大学
 
 ### 教务处通知
@@ -2031,7 +2045,11 @@ jsjxy.hbut.edu.cn 证书链不全，自建 RSSHub 可设置环境变量 NODE_TLS
 
 ### 官网通知公告
 
-<Route author="real-jiakai" example="/njxzc/tzgg" path="/njxzc/tzgg" radar="1"/>
+<Route author="real-jiakai" example="/njxzc/tzgg" path="/njxzc/tzgg" radar="1" />
+
+### 图书馆通知公告
+
+<Route author="real-jiakai" example="/njxzc/libtzgg" path="/njxzc/libtzgg" radar="1" />
 
 ## 南京信息工程大学
 

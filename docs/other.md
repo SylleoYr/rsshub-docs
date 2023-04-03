@@ -157,6 +157,18 @@ pageClass: routes
 
 <Route author="LogicJake" example="/instapaper/person/viridiano" path="/instapaper/person"/>
 
+## Instructables
+
+### Projects
+
+<Route author="wolfg1969" example="/instructables/projects/circuits" path="/instructables/projects/:category?" :paramsDesc="['项目类别。默认空值为全部，从网页地址中得知，见下表']" radar="1">
+
+| All | Circuits | Workshop | Craft | Cooking | Living | Outside | Teachers |
+| --- | -------- | -------- | ----- | ------- | ------ | ------- | -------- |
+|     | circuits | workshop | craft | cooking | living | outside | teachers |
+
+</Route>
+
 ## iYouport
 
 ### 首页（旧版）
@@ -354,6 +366,12 @@ type 为 all 时，category 参数不支持 cost 和 free
 | all  | ancestry | cost | disease    | drug     | free | genefit  | metabolism | psychology | risk     | skin     | traits   |
 
 </Route>
+
+## WFDF
+
+### 新闻
+
+<Route author="HankChow" example="/wfdf/news" path="/wfdf/news" radar="1"/>
 
 ## wikiHow
 
