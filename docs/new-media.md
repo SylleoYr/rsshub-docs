@@ -2997,6 +2997,33 @@ column 为 third 时可选的 category:
 
 <Route author="nczitzk" example="/6park/chan1/keywords/都市" path="/6park/:id/keywords/:keyword?" :paramsDesc="['分站，见上表', '关键字']"/>
 
+### 新闻栏目
+
+<Route author="nczitzk" example="/6park/news" path="/6park/news/:site?/:id?" :paramsDesc="['分站，见下表，默认为 newspark', '栏目 id']">
+
+分站
+
+| newspark | local |
+| -------- | ----- |
+
+::: tip 提示
+
+若订阅 [时政](https://www.6parknews.com/newspark/index.php?type=1)，其网址为 <https://www.6parknews.com/newspark/index.php?type=1>，其中 `newspark` 为分站，`1` 为栏目 id。
+
+若订阅 [美国](https://local.6parknews.com/index.php?type_id=1)，其网址为 <https://local.6parknews.com/index.php?type_id=1>，其中 `local` 为分站，`1` 为栏目 id。
+
+:::
+
+</Route>
+
+### 头条精选
+
+<Route author="nczitzk" example="/6park/news/newspark/gold" path="/6park/news/newspark/gold"/>
+
+### 新闻搜索
+
+<Route author="nczitzk" example="/6park/news/newspark/keywords/搜索" path="/6park/news/newspark/keywords/:keyword?" :paramsDesc="['关键字']"/>
+
 ## 隆众资讯
 
 ### 资讯
@@ -4085,6 +4112,10 @@ wechat-feeds 来源[已停止更新](https://github.com/hellodword/wechat-feeds/
 
 </Route>
 
+### 公众号（搜狗来源）
+
+<Route author="NavePnow" example="/wechat/sogou/qimao0908" path="/wechat/sogou/:id" :paramsDesc="['公众号 id, 打开 weixin.sogou.com 并搜索相应公众号， 在 URL 中找到 id']"/>
+
 ## 维基百科
 
 ### 中国大陆新闻动态
@@ -4204,6 +4235,32 @@ wechat-feeds 来源[已停止更新](https://github.com/hellodword/wechat-feeds/
 | (空)     | ms   | qg   | qz   |
 
 </Route>
+
+## 香港 01
+
+### 热门
+
+<Route author="hoilc Fatpandac nczitzk" example="/hk01/hot" path="/hk01/hot" radar="1" rssbud="1"/>
+
+### 栏目
+
+<Route author="hoilc Fatpandac nczitzk" example="/hk01/zone/11" path="/hk01/zone/:id" :paramsDesc="['栏目 id, 可在 URL 中找到']" radar="1" rssbud="1"/>
+
+### 子栏目
+
+<Route author="hoilc Fatpandac nczitzk" example="/hk01/channel/391" path="/hk01/channel/:id" :paramsDesc="['子栏目 id, 可在 URL 中找到']" radar="1" rssbud="1"/>
+
+### 专题
+
+<Route author="hoilc Fatpandac nczitzk" example="/hk01/issue/649" path="/hk01/issue/:id" :paramsDesc="['专题 id, 可在 URL 中找到']" radar="1" rssbud="1"/>
+
+### 标签
+
+<Route author="hoilc Fatpandac nczitzk" example="/hk01/tag/2787" path="/hk01/tag/:id" :paramsDesc="['标签 id, 可在 URL 中找到']" radar="1" rssbud="1"/>
+
+### 即時
+
+<Route author="5upernove-heng" example="/hk01/latest" path="/hk01/latest" radar="1" rssbud="1"/>
 
 ## 香港高登
 
